@@ -1,6 +1,38 @@
-# Getting Started with Create React App
+# QuickReact
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+シンプルで効率的な React アプリケーションのサンプルプロジェクト。
+
+## 概要
+
+QuickReact は React の基本機能とベストプラクティスを示すために作成された参照用プロジェクトです。このアプリケーションは React 18 と最新の Web Vitals 計測を含んでいます。
+
+## 技術スタック
+
+- React 18
+- React Testing Library
+- Jest
+- CSS Modules
+- Web Vitals
+
+## セットアップ
+
+### 必要条件
+
+- Node.js 16.x 以上
+- npm 8.x 以上 または yarn 1.22.x 以上
+
+### インストール
+
+```bash
+# リポジトリをクローン
+git clone <repository-url>
+cd quick-react
+
+# 依存関係のインストール
+npm install
+# または
+yarn install
+```
 
 ## Available Scripts
 
@@ -68,3 +100,23 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Environment Variables
+
+```plaintext
+REACT_APP_API_URL=https://api.example.com
+REACT_APP_ENV=development
+```
+
+## プロジェクト構成
+
+```markdown
+src/
+├── components/     # 再利用可能なコンポーネント
+├── hooks/          # カスタムフック
+├── pages/          # ページコンポーネント
+├── services/       # API通信などのサービス
+├── utils/          # ユーティリティ関数
+├── App.js          # メインアプリケーションコンポーネント
+└── index.js        # エントリーポイント
+```
